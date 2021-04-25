@@ -236,6 +236,9 @@ main {
     background-image: url(../images/SEO-bg.png);
     background-position: 10%;
     background-repeat: no-repeat;
+    @include mquery(1440px) {
+      background-position: -15% 0;
+    }
     @include mquery(576px) {
       padding: 50px 0;
     }
@@ -476,6 +479,198 @@ main {
       &:hover {
         box-shadow: 15px 20px 50px rgba(0, 0, 0, 0.1);
       }
+    }
+  }
+
+  #clients {
+    padding: 100px 0;
+    @include mquery(576px) {
+      padding: 50px 0;
+    }
+
+    .team-carousel {
+      .carousel-team-item {
+        padding: 30px;
+        margin-bottom: 30px;
+        border: 2px solid #eeeeee;
+        &:hover {
+          box-shadow: 15px 25px 60px -10px rgba(0, 0, 0, 0.1);
+        }
+        @include mquery(900px) {
+          padding: 30px 0;
+        }
+        p {
+          font-size: 16px;
+          line-height: 150%;
+          text-align: center;
+          color: #888888;
+          width: 80%;
+          margin: 0 auto;
+        }
+        img {
+          border-radius: 50%;
+          margin: 25px 0;
+          width: 50px;
+        }
+        h6 {
+          font-size: 13px;
+          line-height: 150%;
+          text-align: center;
+          font-weight: 600;
+        }
+        span {
+          font-size: 13px;
+          line-height: 150%;
+          text-align: center;
+          color: #888888;
+        }
+      }
+    }
+  }
+
+  #news {
+    padding: 100px 0;
+    @include mquery(576px) {
+      padding: 50px 0;
+    }
+    .news-carousel {
+      .carousel-news-item {
+        display: flex;
+        margin-bottom: 30px;
+        opacity: 0.5;
+        transition: all 0.3s;
+        @include mquery(900px) {
+          display: block;
+        }
+        &:hover {
+          opacity: 1;
+        }
+        .img-news-box {
+          img {
+          }
+        }
+        .news-info {
+          margin: auto;
+          padding: 30px;
+          h4 {
+            font-size: 24px;
+            line-height: 150%;
+            font-weight: bold;
+          }
+          .news-icons {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+            .news-icons-item {
+              color: $muted-cl;
+              i {
+                color: $primary-cl;
+                margin-right: 10px;
+                @include mquery(900px) {
+                  margin-right: 5px;
+                }
+              }
+            }
+          }
+          p {
+            font-size: 15px;
+            line-height: 150%;
+            color: #666666;
+            margin: 20px 0;
+          }
+          a {
+            color: $primary-cl;
+          }
+        }
+      }
+    }
+  }
+}
+
+footer {
+  background-color: #f3f3f3;
+  padding: 80px 0 20px;
+  @include mquery(576px) {
+    padding: 50px 0;
+  }
+
+  #top-footer {
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 50px;
+
+    .logo-wrapper {
+      @include mquery(576px) {
+        margin-bottom: 30px;
+      }
+      p {
+        font-size: 14px;
+        line-height: 160%;
+        color: #666666;
+        margin: 50px 20px;
+      }
+      .social-box {
+        margin-top: 20px;
+        i {
+          color: #aaaaaa;
+        }
+      }
+    }
+
+    .footer-list {
+      margin: 0 25px;
+      @include mquery(900px) {
+        margin-bottom: 20px;
+      }
+      h4 {
+        font-size: 24px;
+        line-height: 160%;
+        font-weight: 700;
+        margin-bottom: 20px;
+      }
+      ul {
+        padding: 0;
+        list-style: none;
+        li {
+          font-size: 16px;
+          line-height: 230%;
+          color: #666666;
+          font-weight: 600;
+          margin-bottom: 10px;
+          position: relative;
+          display: flex;
+          align-items: center;
+          &::before {
+            content: "";
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            background-color: $primary-cl;
+            left: -14px;
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+    .footer-list.contact-list {
+      ul {
+        li {
+          font-weight: 400;
+          margin-bottom: 5px;
+          &::before {
+            content: none;
+          }
+        }
+      }
+    }
+  }
+
+  #bot-footer {
+    padding-top: 20px;
+    text-align: center;
+    span {
+      font-size: 14px;
+      line-height: 230%;
+      color: #888888;
     }
   }
 }
