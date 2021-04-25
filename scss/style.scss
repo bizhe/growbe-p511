@@ -37,3 +37,45 @@ header {
     }
   }
 }
+
+main {
+  #brands {
+    padding: 100px 0;
+    .brand-wrapper {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 5px;
+      align-items: center;
+      @include mquery(768px) {
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        align-items: center;
+        gap: 20px 5px;
+      }
+      @include mquery(576px) {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+    }
+  }
+
+  #project {
+    .project-info {
+      h3 {
+        font-size: 45px;
+        line-height: 56px;
+      }
+      p {
+        font-size: 16px;
+        line-height: 150%;
+        color: $muted-cl;
+        margin: 35px 0;
+      }
+      .btn-more {
+        display: inline-block;
+        @include btn-default;
+      }
+    }
+  }
+}
