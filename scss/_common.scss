@@ -7,3 +7,22 @@ a {
     text-decoration: none;
   }
 }
+
+.section-title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 50px;
+  h3 {
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 150%;
+  }
+  span {
+    font-size: 16px;
+    line-height: 150%;
+    color: #666666;
+  }
+}

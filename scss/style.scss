@@ -447,4 +447,35 @@ main {
       }
     }
   }
+
+  #team {
+    padding: 100px 0;
+    @include mquery(576px) {
+      padding: 50px 0;
+    }
+    .team-item {
+      padding: 50px;
+      border: 1px solid #eeeeee;
+      text-align: center;
+      transition: all 0.3s;
+
+      @include mquery(900px) {
+        margin-bottom: 30px;
+      }
+
+      h6 {
+        margin-top: 20px;
+      }
+
+      .social-box {
+        margin-top: 20px;
+        i {
+          color: #aaaaaa;
+        }
+      }
+      &:hover {
+        box-shadow: 15px 20px 50px rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
 }
