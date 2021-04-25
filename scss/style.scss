@@ -148,4 +148,33 @@ main {
       z-index: 2;
     }
   }
+
+  #thumbnails {
+    padding: 100px 0;
+    .thumbnail-item {
+      padding: 40px 30px;
+      transition: all 0.3s;
+      @include mquery(768px) {
+        text-align: center;
+      }
+      h5 {
+        font-size: 24px;
+        line-height: 30px;
+        margin: 25px 0 20px;
+      }
+      p {
+        font-size: 15px;
+        line-height: 150%;
+      }
+      a {
+        font-size: 11px;
+        line-height: 150%;
+        color: #000;
+      }
+
+      &:hover {
+        box-shadow: 15px 25px 56px 6px rgba(0, 0, 0, 0.06);
+      }
+    }
+  }
 }

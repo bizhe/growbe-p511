@@ -209,3 +209,41 @@ main #project .macc {
   position: relative;
   z-index: 2;
 }
+
+main #thumbnails {
+  padding: 100px 0;
+}
+
+main #thumbnails .thumbnail-item {
+  padding: 40px 30px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+@media only screen and (max-width: 768px) {
+  main #thumbnails .thumbnail-item {
+    text-align: center;
+  }
+}
+
+main #thumbnails .thumbnail-item h5 {
+  font-size: 24px;
+  line-height: 30px;
+  margin: 25px 0 20px;
+}
+
+main #thumbnails .thumbnail-item p {
+  font-size: 15px;
+  line-height: 150%;
+}
+
+main #thumbnails .thumbnail-item a {
+  font-size: 11px;
+  line-height: 150%;
+  color: #000;
+}
+
+main #thumbnails .thumbnail-item:hover {
+  -webkit-box-shadow: 15px 25px 56px 6px rgba(0, 0, 0, 0.06);
+          box-shadow: 15px 25px 56px 6px rgba(0, 0, 0, 0.06);
+}
