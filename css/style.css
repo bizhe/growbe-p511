@@ -16,9 +16,15 @@ header .logo-box .logo {
 
 @media only screen and (max-width: 800px) {
   header .logo-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-bottom: 20px;
   }
 }
@@ -76,7 +82,7 @@ main #intro .intro_title h1 span {
 }
 
 main #intro .intro_title p {
-  color: #888888;
+  color: #666666;
   font-size: 20px;
   line-height: 23px;
   margin: 30px 0 35px 0;
@@ -104,24 +110,32 @@ main #brands {
 
 main #brands .brand-wrapper {
   width: 100%;
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
   gap: 5px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media only screen and (max-width: 768px) {
   main #brands .brand-wrapper {
-    grid-template-columns: repeat(3, 1fr);
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
     justify-items: center;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: 20px 5px;
   }
 }
 
 @media only screen and (max-width: 576px) {
   main #brands .brand-wrapper {
-    grid-template-columns: 1fr;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
     gap: 20px;
   }
 }
@@ -179,7 +193,7 @@ main #project .project-info h3 {
 main #project .project-info p {
   font-size: 16px;
   line-height: 150%;
-  color: #888888;
+  color: #666666;
   margin: 35px 0;
 }
 
@@ -202,6 +216,7 @@ main #thumbnails {
 
 main #thumbnails .thumbnail-item {
   padding: 40px 30px;
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -229,7 +244,8 @@ main #thumbnails .thumbnail-item a {
 }
 
 main #thumbnails .thumbnail-item:hover {
-  box-shadow: 15px 25px 56px 6px rgba(0, 0, 0, 0.06);
+  -webkit-box-shadow: 15px 25px 56px 6px rgba(0, 0, 0, 0.06);
+          box-shadow: 15px 25px 56px 6px rgba(0, 0, 0, 0.06);
 }
 
 main #choice {
@@ -249,6 +265,7 @@ main #choice .desc {
 
 main #choice .choice-item {
   text-align: center;
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
   overflow: hidden;
 }
@@ -287,18 +304,146 @@ main #choice .choice-item .choice-info a {
 }
 
 main #choice .choice-item:hover {
-  box-shadow: 15px 25px 60px -5px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 15px 25px 60px -5px rgba(0, 0, 0, 0.1);
+          box-shadow: 15px 25px 60px -5px rgba(0, 0, 0, 0.1);
 }
 
-main #SEO {
+main #seo {
   padding: 150px 0;
   background-image: url(../images/SEO-bg.png);
-  background-position: 20%;
+  background-position: 10%;
   background-repeat: no-repeat;
 }
 
-main #SEO .seo-item h3 {
+@media only screen and (max-width: 576px) {
+  main #seo {
+    padding: 50px 0;
+  }
+}
+
+main #seo .seo-item h3 {
   font-size: 45px;
   line-height: 53px;
   font-weight: bold;
+}
+
+main #seo .description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 20px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+main #seo .description:hover {
+  -webkit-box-shadow: 15px 25px 60px -5px rgba(0, 0, 0, 0.1);
+          box-shadow: 15px 25px 60px -5px rgba(0, 0, 0, 0.1);
+}
+
+main #seo .des-info {
+  margin-left: 30px;
+}
+
+main #seo .des-info h4 {
+  font-size: 20px;
+  line-height: 150%;
+  font-weight: bold;
+}
+
+main #seo .des-info p {
+  font-size: 15px;
+  line-height: 150%;
+  color: #666;
+  margin-top: 10px;
+}
+
+main #statistics {
+  padding: 100px 0;
+}
+
+@media only screen and (max-width: 800px) {
+  main #statistics {
+    padding: 0;
+  }
+}
+
+main #statistics .statistics-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px;
+  border: 2px solid #eeeeee;
+}
+
+@media only screen and (max-width: 576px) {
+  main #statistics .statistics-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+main #statistics .statistics-wrapper .statistics-item {
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  position: relative;
+}
+
+@media only screen and (max-width: 576px) {
+  main #statistics .statistics-wrapper .statistics-item {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin: 15px;
+  }
+}
+
+main #statistics .statistics-wrapper .statistics-item h3 {
+  font-size: 40px;
+  line-height: 150%;
+  color: #666666;
+}
+
+main #statistics .statistics-wrapper .statistics-item span {
+  font-size: 18px;
+  line-height: 150%;
+  color: #666666;
+}
+
+main #statistics .statistics-wrapper .statistics-item:not(:last-child):after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 50%;
+  right: 0;
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 800px) {
+  main #statistics .statistics-wrapper .statistics-item:not(:last-child):after {
+    width: 0;
+  }
+}
+
+main #statistics .statistics-wrapper .statistics-item.red:after {
+  background-color: #f3602d;
+}
+
+main #statistics .statistics-wrapper .statistics-item.green:after {
+  background-color: #149211;
+}
+
+main #statistics .statistics-wrapper .statistics-item.orange:after {
+  background-color: #ffc700;
 }

@@ -222,22 +222,100 @@ main {
       }
     }
   }
-  #SEO {
+  #seo {
     padding: 150px 0;
     background-image: url(../images/SEO-bg.png);
-    background-position: 20%;
+    background-position: 10%;
     background-repeat: no-repeat;
+    @include mquery(576px) {
+      padding: 50px 0;
+    }
     .seo-item {
       h3 {
-        
         font-size: 45px;
         line-height: 53px;
         font-weight: bold;
       }
     }
     .description {
+      display: flex;
+      align-items: center;
+      padding: 15px 20px;
+      transition: all 0.3s;
+      &:hover {
+        box-shadow: 15px 25px 60px -5px rgba(0, 0, 0, 0.1);
+      }
     }
     .des-info {
+      margin-left: 30px;
+      h4 {
+        font-size: 20px;
+        line-height: 150%;
+        font-weight: bold;
+      }
+      p {
+        font-size: 15px;
+        line-height: 150%;
+        color: #666;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  #statistics {
+    padding: 100px 0;
+    @include mquery(800px) {
+      padding: 0;
+    }
+    .statistics-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 40px;
+      border: 2px solid #eeeeee;
+      @include mquery(576px) {
+        flex-wrap: wrap;
+      }
+      .statistics-item {
+        text-align: center;
+        flex-grow: 1;
+        position: relative;
+        @include mquery(576px) {
+          flex-basis: 100%;
+          margin: 15px;
+        }
+        h3 {
+          font-size: 40px;
+          line-height: 150%;
+          color: #666666;
+        }
+        span {
+          font-size: 18px;
+          line-height: 150%;
+          color: #666666;
+        }
+        &:not(:last-child):after {
+          content: "";
+          position: absolute;
+          width: 15px;
+          height: 15px;
+          top: 50%;
+          right: 0;
+          border-radius: 50%;
+          @include mquery(800px) {
+            width: 0;
+          }
+        }
+      }
+      .statistics-item.red:after {
+        background-color: #f3602d;
+      }
+      .statistics-item.green:after {
+        background-color: #149211;
+      }
+      .statistics-item.orange:after {
+        background-color: #ffc700;
+      }
     }
   }
 }
