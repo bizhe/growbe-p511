@@ -70,10 +70,23 @@ main #intro {
   }
 }
 
+@media only screen and (max-width: 576px) {
+  main #intro {
+    padding: 50px 0;
+  }
+}
+
 main #intro .intro_title h1 {
   font-size: 60px;
   line-height: 70px;
   font-weight: bold;
+}
+
+@media only screen and (max-width: 576px) {
+  main #intro .intro_title h1 {
+    font-size: 30px;
+    line-height: 45px;
+  }
 }
 
 main #intro .intro_title h1 span {
@@ -327,6 +340,13 @@ main #seo .seo-item h3 {
   font-weight: bold;
 }
 
+@media only screen and (max-width: 576px) {
+  main #seo .seo-item h3 {
+    font-size: 35px;
+    line-height: 43px;
+  }
+}
+
 main #seo .description {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -367,7 +387,7 @@ main #statistics {
 
 @media only screen and (max-width: 800px) {
   main #statistics {
-    padding: 0;
+    padding: 50px 0;
   }
 }
 
@@ -446,4 +466,171 @@ main #statistics .statistics-wrapper .statistics-item.green:after {
 
 main #statistics .statistics-wrapper .statistics-item.orange:after {
   background-color: #ffc700;
+}
+
+main #speed {
+  padding: 100px 0;
+}
+
+@media only screen and (max-width: 800px) {
+  main #speed {
+    padding: 50px 0;
+  }
+}
+
+main #speed .speed-info h2 {
+  font-size: 45px;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 576px) {
+  main #speed .speed-info h2 {
+    font-size: 35px;
+  }
+}
+
+main #speed .speed-info p {
+  margin: 20px 0 50px;
+  font-size: 16px;
+  line-height: 150%;
+  color: #666666;
+}
+
+main #speed .speed-info form input {
+  background-color: #eeeeee;
+}
+
+main #speed .speed-info form input::-webkit-input-placeholder {
+  font-size: 12px;
+  color: #666666;
+}
+
+main #speed .speed-info form input:-ms-input-placeholder {
+  font-size: 12px;
+  color: #666666;
+}
+
+main #speed .speed-info form input::-ms-input-placeholder {
+  font-size: 12px;
+  color: #666666;
+}
+
+main #speed .speed-info form input::placeholder {
+  font-size: 12px;
+  color: #666666;
+}
+
+main #speed .speed-info form .left-inp {
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+main #speed .speed-info form .right-inp {
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+main #speed .speed-info form .submit-btn {
+  background-color: #f25822;
+  color: #fff;
+  border-radius: 25px;
+  padding: 12px 25px;
+  padding: 6px 35px;
+  margin-left: 20px;
+}
+
+@media only screen and (max-width: 576px) {
+  main #speed .speed-info form .submit-btn {
+    margin: 20px 0 40px;
+    width: 100%;
+  }
+}
+
+main #plans {
+  background-color: #fafafa;
+  padding: 100px 0;
+}
+
+@media only screen and (max-width: 576px) {
+  main #plans {
+    padding: 50px 0;
+  }
+}
+
+main #plans .plan-item {
+  padding: 70px;
+  text-align: center;
+  background-color: #fff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  margin-top: 0;
+}
+
+@media only screen and (max-width: 800px) {
+  main #plans .plan-item {
+    padding: 30px;
+  }
+}
+
+main #plans .plan-item h5 {
+  font-size: 24px;
+  line-height: 150%;
+  margin-bottom: 50px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+main #plans .plan-item div {
+  font-size: 24px;
+  line-height: 150%;
+  margin-bottom: 20px;
+}
+
+main #plans .plan-item div span {
+  font-size: 70px;
+}
+
+main #plans .plan-item h6 {
+  font-size: 16px;
+  line-height: 250%;
+  color: #666;
+  font-weight: normal;
+}
+
+main #plans .plan-item a {
+  background-color: #f25822;
+  color: #fff;
+  border-radius: 25px;
+  padding: 12px 25px;
+  background-color: rgba(242, 88, 34, 0.25);
+  color: #f3602d;
+  margin-top: 30px;
+  display: inline-block;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+main #plans .plan-item:hover {
+  padding: 90px 70px;
+  margin-top: -20px;
+  -webkit-box-shadow: 15px 25px 70px -5px rgba(0, 0, 0, 0.07);
+          box-shadow: 15px 25px 70px -5px rgba(0, 0, 0, 0.07);
+}
+
+@media only screen and (max-width: 800px) {
+  main #plans .plan-item:hover {
+    padding: 30px;
+    margin-top: 0;
+  }
+}
+
+main #plans .plan-item:hover h5 {
+  color: #f25822;
+}
+
+main #plans .plan-item:hover a {
+  background-color: #f25822;
+  color: #fff;
+  border-radius: 25px;
+  padding: 12px 25px;
 }
