@@ -1,0 +1,39 @@
+@import "variables";
+@import "common";
+@import "mixins";
+
+header {
+  padding: 45px 0;
+  .logo-box {
+    .logo {
+      max-width: 100%;
+    }
+
+    @include mquery(800px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+  }
+
+  nav {
+    text-align: right;
+    .nav-item-custom {
+      margin: 15px;
+      font-size: 14px;
+      line-height: 17px;
+      color: #000;
+      @include mquery(576px) {
+        display: inline-block;
+      }
+    }
+    .nav-item-custom.active {
+      color: $primary-cl;
+    }
+
+    .started {
+      @include btn-default;
+    }
+  }
+}
