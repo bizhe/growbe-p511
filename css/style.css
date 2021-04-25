@@ -56,3 +56,44 @@ header nav .started {
   border-radius: 25px;
   padding: 12px 25px;
 }
+
+main #intro {
+  background-image: url(../images/intro_background.png);
+  background-position: 120%;
+  background-repeat: no-repeat;
+  padding: 100px 0;
+}
+
+main #intro .intro_title h1 {
+  font-size: 60px;
+  line-height: 70px;
+  font-weight: bold;
+}
+
+main #intro .intro_title h1 span {
+  border: 1px solid #F25822;
+  border-radius: 50%;
+}
+
+main #intro .intro_title p {
+  color: #888888;
+  font-size: 20px;
+  line-height: 23px;
+  margin: 30px 0 35px 0;
+}
+
+main #intro .intro_title .intro_btns .strt_btn {
+  background-color: #f25822;
+  color: #fff;
+  border-radius: 25px;
+  padding: 12px 25px;
+  margin-right: 27px;
+}
+
+main #intro .intro_title .intro_btns img {
+  margin-right: 15px;
+}
+
+main #intro .intro_title .intro_btns a:last-child {
+  color: #AAAAAA;
+}

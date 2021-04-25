@@ -1,45 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Grow Be</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <header>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grow Be</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="logo-box">
+            <img class="logo" src="images/logo.svg" alt="" />
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <nav>
+            <a class="nav-item-custom active" href="#">Home</a>
+            <a class="nav-item-custom" href="#">About Us</a>
+            <a class="nav-item-custom" href="#">Services</a>
+            <a class="nav-item-custom" href="#">Features</a>
+            <a class="nav-item-custom" href="#">Blog</a>
+            <a class="nav-item-custom" href="#">Contact</a>
+            <a class="nav-item-custom started" href="#">Get Started</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="intro">
       <div class="container">
         <div class="row">
-          <div class="col-lg-4">
-            <div class="logo-box">
-              <img class="logo" src="images/logo.svg" alt="" />
+          <div class="col-md-6">
+            <div class="intro_title">
+              <h1>SEO & Digital <br>
+               <span>Marketing</span> For Your <br>
+                Website.</h1>
+                <p>Provide all kind of seo services and help to improve <br>
+                  seo ranking. Globally incubate standards.</p>
+                  <div class="intro_btns">
+                    <a href="#" class="strt_btn">Start Now</a>
+                    <a href="#"><img src="images/play.svg" alt="icon"> Watch Now</a>
+                  </div>
             </div>
-          </div>
-          <div class="col-lg-8">
-            <nav>
-              <a class="nav-item-custom active" href="#">Home</a>
-              <a class="nav-item-custom" href="#">About Us</a>
-              <a class="nav-item-custom" href="#">Services</a>
-              <a class="nav-item-custom" href="#">Features</a>
-              <a class="nav-item-custom" href="#">Blog</a>
-              <a class="nav-item-custom" href="#">Contact</a>
-              <a class="nav-item-custom started" href="#">Get Started</a>
-            </nav>
+
           </div>
         </div>
       </div>
-    </header>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="js/index.js"></script>
-  </body>
+    </section>
+
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
 </html>
