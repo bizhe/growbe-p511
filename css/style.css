@@ -16,15 +16,9 @@ header .logo-box .logo {
 
 @media only screen and (max-width: 800px) {
   header .logo-box {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 20px;
   }
 }
@@ -110,32 +104,24 @@ main #brands {
 
 main #brands .brand-wrapper {
   width: 100%;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[6];
-      grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: 5px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 @media only screen and (max-width: 768px) {
   main #brands .brand-wrapper {
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     justify-items: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     gap: 20px 5px;
   }
 }
 
 @media only screen and (max-width: 576px) {
   main #brands .brand-wrapper {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
     gap: 20px;
   }
 }
@@ -216,7 +202,6 @@ main #thumbnails {
 
 main #thumbnails .thumbnail-item {
   padding: 40px 30px;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -244,8 +229,7 @@ main #thumbnails .thumbnail-item a {
 }
 
 main #thumbnails .thumbnail-item:hover {
-  -webkit-box-shadow: 15px 25px 56px 6px rgba(0, 0, 0, 0.06);
-          box-shadow: 15px 25px 56px 6px rgba(0, 0, 0, 0.06);
+  box-shadow: 15px 25px 56px 6px rgba(0, 0, 0, 0.06);
 }
 
 main #choice {
@@ -265,7 +249,6 @@ main #choice .desc {
 
 main #choice .choice-item {
   text-align: center;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
   overflow: hidden;
 }
@@ -304,6 +287,18 @@ main #choice .choice-item .choice-info a {
 }
 
 main #choice .choice-item:hover {
-  -webkit-box-shadow: 15px 25px 60px -5px rgba(0, 0, 0, 0.1);
-          box-shadow: 15px 25px 60px -5px rgba(0, 0, 0, 0.1);
+  box-shadow: 15px 25px 60px -5px rgba(0, 0, 0, 0.1);
+}
+
+main #SEO {
+  padding: 150px 0;
+  background-image: url(../images/SEO-bg.png);
+  background-position: 20%;
+  background-repeat: no-repeat;
+}
+
+main #SEO .seo-item h3 {
+  font-size: 45px;
+  line-height: 53px;
+  font-weight: bold;
 }

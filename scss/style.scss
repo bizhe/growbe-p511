@@ -222,4 +222,22 @@ main {
       }
     }
   }
+  #SEO {
+    padding: 150px 0;
+    background-image: url(../images/SEO-bg.png);
+    background-position: 20%;
+    background-repeat: no-repeat;
+    .seo-item {
+      h3 {
+        
+        font-size: 45px;
+        line-height: 53px;
+        font-weight: bold;
+      }
+    }
+    .description {
+    }
+    .des-info {
+    }
+  }
 }
