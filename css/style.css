@@ -247,3 +247,63 @@ main #thumbnails .thumbnail-item:hover {
   -webkit-box-shadow: 15px 25px 56px 6px rgba(0, 0, 0, 0.06);
           box-shadow: 15px 25px 56px 6px rgba(0, 0, 0, 0.06);
 }
+
+main #choice {
+  padding: 50px 0;
+}
+
+main #choice .title {
+  font-size: 45px;
+  line-height: 56px;
+}
+
+main #choice .desc {
+  font-size: 16px;
+  line-height: 150%;
+  color: #666;
+}
+
+main #choice .choice-item {
+  text-align: center;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 576px) {
+  main #choice .choice-item {
+    margin-bottom: 20px;
+  }
+}
+
+main #choice .choice-item img {
+  max-width: 100%;
+}
+
+main #choice .choice-item .choice-info {
+  padding: 20px;
+}
+
+main #choice .choice-item .choice-info h5 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+main #choice .choice-item .choice-info p {
+  font-size: 15px;
+  line-height: 150%;
+  color: #aaaaaa;
+  margin: 25px 0 40px;
+}
+
+main #choice .choice-item .choice-info a {
+  background-color: #f25822;
+  color: #fff;
+  border-radius: 25px;
+  padding: 12px 25px;
+}
+
+main #choice .choice-item:hover {
+  -webkit-box-shadow: 15px 25px 60px -5px rgba(0, 0, 0, 0.1);
+          box-shadow: 15px 25px 60px -5px rgba(0, 0, 0, 0.1);
+}
